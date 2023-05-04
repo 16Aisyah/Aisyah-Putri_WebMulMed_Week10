@@ -35,73 +35,38 @@
 		</div>
 	</div>
 	<script>
-		// function kalkulator() {
-		// 	// event.preventDefault();
-		// 	let pertama = parseFloat(document.getElementById("pertama").value);
-		// 	console.log("Bilangan Pertama : ", pertama);
-		// 	let kedua = parseFloat(document.getElementById("kedua").value);
-		// 	console.log("Bilangan Kedua : ", kedua);
-		// 	let operator = document.getElementById("operator").values;
-
-		// 	if (operator == "penjumlahan") {
-		// 		let hasilJS = pertama + kedua;
-		// 		document.getElementById("HasilJS").innerHTML = hasilJS;
-		// 		console.log("Hasil Penjumlahan : ", pertama + kedua);
-		// 	}
-		// 	else if (operator == "pengurangan") {
-		// 		let hasilJS = pertama - kedua;
-		// 		document.getElementById("HasilJS").innerHTML = hasilJS;
-		// 		console.log("Hasil Pengurangan : ", pertama - kedua);
-		// 	}
-		// 	else if (operator == "perkalian") {
-		// 		let hasilJS = pertama * kedua;
-		// 		document.getElementById("HasilJS").innerHTML = hasilJS;
-		// 		console.log("Hasil Perkalian : ", pertama * kedua);
-		// 	}
-		// 	else if (operator == "pembagian") {
-		// 		let hasilJS = pertama / kedua;
-		// 		document.getElementById("HasilJS").innerHTML = hasilJS;
-		// 		console.log("Hasil Pembagian : ", pertama / kedua);
-		// 	}
-		// 	else {
-		// 		confirm("Masukkan angka terlebih dahulu");
-		// 	}
-		// }
 		function kalkulator() {
+			// event.preventDefault();
 			let pertama = parseFloat(document.getElementById("pertama").value);
 			console.log("Bilangan Pertama : ", pertama);
 			let kedua = parseFloat(document.getElementById("kedua").value);
 			console.log("Bilangan Kedua : ", kedua);
-			let operator = document.getElementById("operator").value;
+			let operator = document.getElementById("operator").values;
 
-			if (isNaN(pertama) || isNaN(kedua)) {
-				document.getElementById("HasilJS").innerHTML = "Masukkan angka pada kedua input bilangan";
-				console.log("Masukkan angka pada kedua input bilangan");
+			if (operator == "penjumlahan") {
+				let hasilJS = pertama + kedua;
+				document.getElementById("HasilJS").innerHTML = hasilJS;
+				console.log("Hasil Penjumlahan : ", pertama + kedua);
+			}
+			else if (operator == "pengurangan") {
+				let hasilJS = pertama - kedua;
+				document.getElementById("HasilJS").innerHTML = hasilJS;
+				console.log("Hasil Pengurangan : ", pertama - kedua);
+			}
+			else if (operator == "perkalian") {
+				let hasilJS = pertama * kedua;
+				document.getElementById("HasilJS").innerHTML = hasilJS;
+				console.log("Hasil Perkalian : ", pertama * kedua);
+			}
+			else if (operator == "pembagian") {
+				let hasilJS = pertama / kedua;
+				document.getElementById("HasilJS").innerHTML = hasilJS;
+				console.log("Hasil Pembagian : ", pertama / kedua);
 			}
 			else {
-				if (operator == "penjumlahan") {
-					let hasilJS = pertama + kedua;
-					document.getElementById("HasilJS").innerHTML = hasilJS;
-					console.log("Hasil Penjumlahan : ", hasilJS);
-				}
-				else if (operator == "pengurangan") {
-					let hasilJS = pertama - kedua;
-					document.getElementById("HasilJS").innerHTML = hasilJS;
-					console.log("Hasil Pengurangan : ", hasilJS);
-				}
-				else if (operator == "perkalian") {
-					let hasilJS = pertama * kedua;
-					document.getElementById("HasilJS").innerHTML = hasilJS;
-					console.log("Hasil Perkalian : ", hasilJS);
-				}
-				else if (operator == "pembagian") {
-					let hasilJS = pertama / kedua;
-					document.getElementById("HasilJS").innerHTML = hasilJS;
-					console.log("Hasil Pembagian : ", hasilJS);
-				}
+				confirm("Masukkan angka terlebih dahulu");
 			}
 		}
-
 
 	</script>
 </body>
