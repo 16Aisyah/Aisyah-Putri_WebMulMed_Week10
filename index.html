@@ -36,6 +36,7 @@
     </div>
     <script>
         function kalkulator() {
+            event.preventDefault();
             let pertama = parseFloat(document.getElementById("pertama").value);
             console.log("Bilangan Pertama : ", pertama);
             let kedua = parseFloat(document.getElementById("kedua").value);
