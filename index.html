@@ -62,7 +62,7 @@
                 document.getElementById("HasilJS").innerHTML = hasilJS;
                 console.log("Hasil Pembagian : ", pertama / kedua);
             }
-            else {
+            else if (operator(pertama) || operator(kedua)){
                 confirm("Masukkan angka terlebih dahulu");
             }
         }
