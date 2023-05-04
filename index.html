@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tugas1</title>
+	<link rel="stylesheet" type="text/css" href="tugas1.css">
+</head>
+
+<body>
+	<h1>Kalkulator Sederhana</h1>
+	<div class="kalkulator">
+		<form name="kalkulator" onSubmit="kalkulator(event)">
+			<div>
+				<label>Bilangan Pertama :</label>
+				<input type="angka1" name="pertama" id="pertama" />
+			</div>
+			<div>
+				<label>Bilangan Kedua :</label>
+				<input type="angka2" name="kedua" id="kedua" />
+			</div>
+			<div>
+				<label>Operasi Bilangan :</label>
+				<select name="operator" id="operator">
+					<option value="penjumlahan">Penjumlahan</option>
+					<option value="pengurangan">Pengurangan</option>
+					<option value="perkalian">Perkalian</option>
+					<option value="pembagian">Pembagian</option>
+				</select>
+			</div>
+			<div>
+				<input type="submit" value="Hitung" class="tombol" onclick="kalkulator">
+			</div>
+		</form>
+	</div>
+	<script>
+		function kalkulator(event) {
+			event.preventDefault();
+			let form = document.forms["kalkulator"];
+			let pertama = form.elements["angka1"].value;
+			let kedua = form.elements["angka2"].value;
+			let operator = form.elements["bilangan"].value;
+
+			pertama = parseFloat(pertama);
+			kedua = parseFloat(kedua);
+
+			if (operator == "penjumlahan") {
+				console.log
+				let hasilJS = pertama + kedua;
+			}
+			else if (operator == "pengurangan") {
+				let hasilJS = pertama - kedua;
+			}
+			else if (operator == "perkalian") {
+				let hasilJS = pertama * kedua;
+			}
+			else if (operator == "pembagian") {
+				let hasilJS = pertama / kedua;
+			}
+			else {
+				confirm("Masukkan angka terlebih dahulu");
+			}
+		}
+	</script>
+</body>
+
+</html>
